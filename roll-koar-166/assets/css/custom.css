@@ -39,7 +39,7 @@
 		z-index: 1;
 	}
   
-	.hero-2, .cards {
+	.hero-2, .cards, .about {
 		width: 100%;
 		min-height: 70vh;
 		padding: 10px 0;
