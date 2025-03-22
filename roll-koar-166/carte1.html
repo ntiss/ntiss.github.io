@@ -1,0 +1,3681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Roll-koar 166 - Une enquête aux origines des collectages...</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+	<!-- Make sure you put this AFTER Leaflet's CSS -->
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+
+  <!-- =======================================================
+  * Template Name: Eterna
+  * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="branding">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Roll-koar 166<br></h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ecouter.html">Écouter</a></li>
+            <li class="dropdown"><a href="#" class="active"><span>Cartes</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="carte1.html" class="active">Carte n°1 : Musiques Bretonnes</a></li>			
+                <li><a href="carte2.html">Carte n°2 : Les phonos</a></li>
+			  </ul>
+			</li>
+            <li><a href="about.html">À propos de moi</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+	<div class="container position-relative">
+		<div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+		  <h2 contenteditable="true" spellcheck="false" class="">Une enquête aux origines des collectages...</h2>
+		</div><!-- End Welcome -->
+	</div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li class="current">Carte n°1 : Musiques Bretonnes</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row  justify-content-between">
+		
+          <div class=" content">
+            <p>Cette carte positionne la totalité des airs publiés par Duhamel dans Musiques Bretonnes en fonction de leur lieu d'origine. Un "aléa" artificiel est injecté pour éviter la surchage de points (par exemple à Port-Blanc ou Pluzunet).</p>
+			<p class="fst-italic">Le fond de carte des broiou provient de <a href="https://www.geobreizh.bzh/pays-traditionnels/">https://www.geobreizh.bzh/pays-traditionnels/</a>. License Creative Commons CC-BY-SA.<br>
+			Développé en Javascript avec la librairie <a href="https://leafletjs.com/">LeafletJS</a> et les cartes <a href="https://www.openstreetmap.org">Openstreemap</a></p>
+
+			<div id="map" class="leaflet-map"></div>
+				
+					<script>
+
+						const map = L.map('map').setView([48.25577, -3.8], 9);
+						map.addControl(new L.Control.Fullscreen());
+						var tileUrl = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png';
+
+						const tiles = L.tileLayer(tileUrl, {
+							minZoom: 8,
+							maxZoom: 19,				
+						}).addTo(map);
+
+						// Add geographical labels only layer on top of baselayer
+						var labels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
+							attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+							pane: 'shadowPane',  // always display on top
+							minZoom: 8,
+							maxZoom: 19,			
+						}).addTo(map)
+
+						// Carte des broiou en overlay.
+						//var imageUrl = 'https://geobreizh.bzh/wp-content/uploads/2020/06/Geobreizh_Bretagne_pays_2_fra.jpg'; // (source, mais image mal orientée)
+						var imageUrl = 'assets/img/broiou.png';
+						imageBounds = [[48.9794, -5.240522], 
+									   [46.731078, -0.810085]];
+						L.imageOverlay(imageUrl, imageBounds, {
+							opacity: 0.6
+						}).addTo(map);
+				
+						var datas = [
+									  {
+										"N° MD": 1,
+										"Titre en breton": "An Otro ar C'hont",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 2,
+										"Titre en breton": "An Otro ar C'hont",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 3,
+										"Titre en breton": "An Otro ar C'hont",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 4,
+										"Titre en breton": "An Otro ar C'hont",
+										"Chanté par": "M. l'Abbé Besco",
+										"Origine interprète": "Lanrivain",
+										"Lat": "48.346724",
+										"Lon": "-3.214491"
+									  },
+									  {
+										"N° MD": 5,
+										"Titre en breton": "Janed ar Wern",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 6,
+										"Titre en breton": "Janed ar Wern",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 7,
+										"Titre en breton": "An hini oa et da welet e vestrez d'an Ifern",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 8,
+										"Titre en breton": "An hini oa et da welet e vestrez d'an Ifern",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 9,
+										"Titre en breton": "An hini oa et da welet e vestrez d'an Ifern",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 10,
+										"Titre en breton": "An hini oa et da welet e vestrez d'an Ifern",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 11,
+										"Titre en breton": "Janedig ar Zorcerez",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 12,
+										"Titre en breton": "Ar Plac'hig hag ine he mam",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 13,
+										"Titre en breton": "Ar Plac'hig hag ine he mam",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 14,
+										"Titre en breton": "Trogadek",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 15,
+										"Titre en breton": "Ar Gernez",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 16,
+										"Titre en breton": "Ar Intanvez Paour",
+										"Chanté par": "Maryvonne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 17,
+										"Titre en breton": "Ar Intanvez Paour",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 18,
+										"Titre en breton": "An ter Gwerg kabluz",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 19,
+										"Titre en breton": "Garan Ar Biz",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 20,
+										"Titre en breton": "Garan Ar Biz",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 21,
+										"Titre en breton": "Garan Ar Biz",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 22,
+										"Titre en breton": "Ar Vinorezig",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 23,
+										"Titre en breton": "Ar Vinorezig",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 24,
+										"Titre en breton": "Ar Vinorezig",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 25,
+										"Titre en breton": "Dom Yann Derrien",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 26,
+										"Titre en breton": "Dom Yann Derrien",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 27,
+										"Titre en breton": "Sant Matelin Monkontour",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 28,
+										"Titre en breton": "Sant Matelin Monkontour",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 29,
+										"Titre en breton": "Sant Matelin Monkontour",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 30,
+										"Titre en breton": "Matelina Troadek",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 31,
+										"Titre en breton": "Matelina Troadek",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 32,
+										"Titre en breton": "Sant-Juluan",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 33,
+										"Titre en breton": "Ar Bugel Koar",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 34,
+										"Titre en breton": "Ar Bugel Koar",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 35,
+										"Titre en breton": "Yanning Skolan",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 36,
+										"Titre en breton": "Yanning Skolan",
+										"Chanté par": "Augustine Malo",
+										"Origine interprète": "Ploëzal",
+										"Lat": "48.715537",
+										"Lon": "-3.204180"
+									  },
+									  {
+										"N° MD": 37,
+										"Titre en breton": "An Ter Vari",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 38,
+										"Titre en breton": "An Ter Vari",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 39,
+										"Titre en breton": "Santez Henori",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 40,
+										"Titre en breton": "Santez Marc'harit",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 41,
+										"Titre en breton": "Ar marc'heger hag ar Verjeren",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 42,
+										"Titre en breton": "An Daou Vreur",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 43,
+										"Titre en breton": "An Daou Vreur",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 44,
+										"Titre en breton": "An Daou Vreur",
+										"Chanté par": "Marie Poullain",
+										"Origine interprète": "Le Merzer",
+										"Lat": "48.575711",
+										"Lon": "-3.067656"
+									  },
+									  {
+										"N° MD": 45,
+										"Titre en breton": "Ar Breur hag ar C'hoar",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 46,
+										"Titre en breton": "Ar Breur hag ar C'hoar",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 47,
+										"Titre en breton": "Ar Breur hag ar C'hoar",
+										"Chanté par": "M. Clec'h",
+										"Origine interprète": "Lanrodec",
+										"Lat": "48.516936",
+										"Lon": "-3.030807"
+									  },
+									  {
+										"N° MD": 48,
+										"Titre en breton": "Marc'harit Loranz",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 49,
+										"Titre en breton": "Marc'harit Loranz",
+										"Chanté par": "Mme Queneder",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 50,
+										"Titre en breton": "Annaïg Kozig",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 51,
+										"Titre en breton": "An Otro ar Gerwen hag ar vatez vihan",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 52,
+										"Titre en breton": "An Otro ar Gerwen hag ar vatez vihan",
+										"Chanté par": "Mme Queneder",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 53,
+										"Titre en breton": "Fantig ar Pikart",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 54,
+										"Titre en breton": "Fantig Pikart",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 55,
+										"Titre en breton": "Fantig Pikart",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 56,
+										"Titre en breton": "Bugel al laourek",
+										"Chanté par": "Marie-Louise Colas",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 57,
+										"Titre en breton": "Mari ar C'habiten",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 58,
+										"Titre en breton": "Ar plac'h he daou bried",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 59,
+										"Titre en breton": "Ar plac'h he daou bried",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 60,
+										"Titre en breton": "Ar plac'h he daou bried",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 61,
+										"Titre en breton": "An daou vanac'h hag ar plac'hig yaouank",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 62,
+										"Titre en breton": "An daou vanac'h hag ar plac'hig yaouank",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 63,
+										"Titre en breton": "An daou vanac'h hag ar plac'hig yaouank",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 64,
+										"Titre en breton": "Lezobre hag Morian ar Roue",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 65,
+										"Titre en breton": "Lezobre hag Morian ar Roue",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 66,
+										"Titre en breton": "Lezobre hag Morian ar Roue",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 67,
+										"Titre en breton": "Rozmelchon",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 68,
+										"Titre en breton": "Rozmelchon",
+										"Chanté par": "Mme Queneder",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 69,
+										"Titre en breton": "Rozmelchon",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 70,
+										"Titre en breton": "Rozmelchon",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 71,
+										"Titre en breton": "Rozmelchon",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 72,
+										"Titre en breton": "Janedig ar Rouz",
+										"Chanté par": "M. Caurel",
+										"Origine interprète": "Plouguernevel",
+										"Lat": "48.239647",
+										"Lon": "-3.251956"
+									  },
+									  {
+										"N° MD": 73,
+										"Titre en breton": "Markiz Trede",
+										"Chanté par": "M. Loeiz Herrieu",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 74,
+										"Titre en breton": "Marivonig",
+										"Chanté par": "Mlle Reine-Anne Le Braz",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 75,
+										"Titre en breton": "Marivonig",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 76,
+										"Titre en breton": "Marivonig",
+										"Chanté par": "",
+										"Origine interprète": "Ergué-Armel, près Quimper",
+										"Lat": "47.983245",
+										"Lon": "-4.070258"
+									  },
+									  {
+										"N° MD": 77,
+										"Titre en breton": "Marivonig",
+										"Chanté par": "",
+										"Origine interprète": "Lesneven",
+										"Lat": "48.572271",
+										"Lon": "-4.323738"
+									  },
+									  {
+										"N° MD": 78,
+										"Titre en breton": "Marivonig",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 79,
+										"Titre en breton": "Yannig ar \"bon-garçon\"",
+										"Chanté par": "Françoise Menguy",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 80,
+										"Titre en breton": "Yannig ar \"bon-garçon\"",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 81,
+										"Titre en breton": "Yannig ar \"bon-garçon\"",
+										"Chanté par": "",
+										"Origine interprète": "Lochrist",
+										"Lat": "47.826635",
+										"Lon": "-3.250538"
+									  },
+									  {
+										"N° MD": 82,
+										"Titre en breton": "Silvestrig",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 83,
+										"Titre en breton": "Silvestrig",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 84,
+										"Titre en breton": "Silvestrig",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 85,
+										"Titre en breton": "Silvestrig",
+										"Chanté par": "M. Le Boulc'h",
+										"Origine interprète": "Scrignac",
+										"Lat": "48.432538",
+										"Lon": "-3.677803"
+									  },
+									  {
+										"N° MD": 86,
+										"Titre en breton": "Pontplankoat",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 87,
+										"Titre en breton": "Pontplankoat",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 88,
+										"Titre en breton": "Renea ar Glaz",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 89,
+										"Titre en breton": "Renea ar Glaz",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 90,
+										"Titre en breton": "Janed ar ludek",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 91,
+										"Titre en breton": "Janed ar ludek",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 92,
+										"Titre en breton": "Janedik ar Marek",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 93,
+										"Titre en breton": "Eskob Penanstank",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 94,
+										"Titre en breton": "An Otro Penanstank",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 95,
+										"Titre en breton": "Penherez Krec'hgoure",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 96,
+										"Titre en breton": "Erwanig Prigent",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 97,
+										"Titre en breton": "Erwanig Prigent",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 98,
+										"Titre en breton": "Erwanig Prigent",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 99,
+										"Titre en breton": "Kerdadraon had ar Gernewez",
+										"Chanté par": "Mme Queneder",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 100,
+										"Titre en breton": "Kerdadraon had ar Gernewez",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 101,
+										"Titre en breton": "Ivona an Hamon",
+										"Chanté par": "Mme Queneder",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 102,
+										"Titre en breton": "Erwanig al Lintier",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 103,
+										"Titre en breton": "Erwanig al Lintier",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 104,
+										"Titre en breton": "Ar C'hont Gwilhou",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 105,
+										"Titre en breton": "Ar C'hont Gwilhou",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 106,
+										"Titre en breton": "Prinsez ar Gwilhou",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 107,
+										"Titre en breton": "Fransoisig ha Pierig",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 108,
+										"Titre en breton": "Ar Serrazined",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 109,
+										"Titre en breton": "Ar Serrazined",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 110,
+										"Titre en breton": "Robart an Diaoul",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 111,
+										"Titre en breton": "Izabel ar Yann",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 112,
+										"Titre en breton": "Izabel ar Yann",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 113,
+										"Titre en breton": "Izabel ar Yann",
+										"Chanté par": "Françoise Menguy",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 114,
+										"Titre en breton": "Seiziz Gwengamp",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 115,
+										"Titre en breton": "Fontanella",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 116,
+										"Titre en breton": "Fontanella",
+										"Chanté par": "M. François Jaffrennou",
+										"Origine interprète": "Karnoet",
+										"Lat": "48.055925",
+										"Lon": "-4.593093"
+									  },
+									  {
+										"N° MD": 117,
+										"Titre en breton": "Fontanella",
+										"Chanté par": "M. Loeiz Herrieu",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 118,
+										"Titre en breton": "Fontanella",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 119,
+										"Titre en breton": "Marc'harit Charlez",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 120,
+										"Titre en breton": "Marc'harit Charlez",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 121,
+										"Titre en breton": "Markiz Traonlavane",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 122,
+										"Titre en breton": "Markiz Traonlavane",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 123,
+										"Titre en breton": "Gwilhaouig Kalvez",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 124,
+										"Titre en breton": "Gwilhaouig Kalvez",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 125,
+										"Titre en breton": "Erwan Gwilhou",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 126,
+										"Titre en breton": "Erwan Gwilhou",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 127,
+										"Titre en breton": "Penherez Keroulaz",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 128,
+										"Titre en breton": "An Aotrou Kersaozon",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 129,
+										"Titre en breton": "Perinaïg ar Mignon",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 130,
+										"Titre en breton": "Perinaïg ar Mignon",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 131,
+										"Titre en breton": "Perinaïg ar Mignon",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 132,
+										"Titre en breton": "Perinaïg ar Mignon",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 133,
+										"Titre en breton": "Perinaïg ar Mignon",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 134,
+										"Titre en breton": "Annaïg ar Bailh",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 135,
+										"Titre en breton": "Annaïg ar Bailh",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 136,
+										"Titre en breton": "Mari Derrienig",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 137,
+										"Titre en breton": "Mari Derrienig",
+										"Chanté par": "François Roux",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 138,
+										"Titre en breton": "Ar Wreg he daou bried",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 139,
+										"Titre en breton": "Ar Wreg he daou bried",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 140,
+										"Titre en breton": "Ar Wreg he daou bried",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 141,
+										"Titre en breton": "Ar Wreg he daou bried",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 142,
+										"Titre en breton": "Yann ar Arc'hantek",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 143,
+										"Titre en breton": "Yann ar Arc'hantek",
+										"Chanté par": "Augustine Kerleau",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 144,
+										"Titre en breton": "Ar Merdedi",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 145,
+										"Titre en breton": "Kervegan an Tourello",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 146,
+										"Titre en breton": "An Otro Koadriou ha Janedig Riou",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 147,
+										"Titre en breton": "An Otro Koadriou ha Janedig Riou",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 148,
+										"Titre en breton": "Ar baron bihan",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 149,
+										"Titre en breton": "Ar C'homblad yaouank",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 150,
+										"Titre en breton": "Margodig Gilhard",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 151,
+										"Titre en breton": "Margodig Gilhard",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 152,
+										"Titre en breton": "Mari Flouri",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 153,
+										"Titre en breton": "Mari Flouri",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 154,
+										"Titre en breton": "Mari Flouri",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 155,
+										"Titre en breton": "Mari ar Mason",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 156,
+										"Titre en breton": "Alliet ar Rolland",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 157,
+										"Titre en breton": "Alliet ar Rolland",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 158,
+										"Titre en breton": "Ar Verjerenig",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 159,
+										"Titre en breton": "Moriseta Tefetaou",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 160,
+										"Titre en breton": "Olier Hamon",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 161,
+										"Titre en breton": "Olier Hamon",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 162,
+										"Titre en breton": "Fanch ar C'halvez",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 163,
+										"Titre en breton": "Fanch ar C'halvez",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 164,
+										"Titre en breton": "Fanchig Morvan",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 165,
+										"Titre en breton": "Mibien Eured",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 166,
+										"Titre en breton": "Ar Prinsaüs",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 167,
+										"Titre en breton": "Ar Prinsaüs",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 168,
+										"Titre en breton": "Guyon Kere",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 169,
+										"Titre en breton": "Guyon Kere",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 170,
+										"Titre en breton": "Paotred Plouaret",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 171,
+										"Titre en breton": "Paotred Plouaret",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 172,
+										"Titre en breton": "Kabiten Rozanfaou",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 173,
+										"Titre en breton": "Kabiten Rozanfaou",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 174,
+										"Titre en breton": "Fantig Montfort",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 175,
+										"Titre en breton": "Fantig Montfort",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 176,
+										"Titre en breton": "La belle Catoise",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 177,
+										"Titre en breton": "Kloarek Plourin",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 178,
+										"Titre en breton": "Al laenez",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 179,
+										"Titre en breton": "Izabel ar C'ham",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 180,
+										"Titre en breton": "Izabel ar C'ham",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 181,
+										"Titre en breton": "Janedig an Titro",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 182,
+										"Titre en breton": "Janedig an Titro",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 183,
+										"Titre en breton": "Janedig an Titro",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 184,
+										"Titre en breton": "Mari ar Moal",
+										"Chanté par": "Françoise Menguy",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 185,
+										"Titre en breton": "Kloarek ar Gallig",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 186,
+										"Titre en breton": "Kloarek ar Chevanz",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 187,
+										"Titre en breton": "Kloarek ar Chevanz",
+										"Chanté par": "",
+										"Origine interprète": "Ergué-Armel, près Quimper",
+										"Lat": "47.983245",
+										"Lon": "-4.070258"
+									  },
+									  {
+										"N° MD": 188,
+										"Titre en breton": "Kloarek ar Glaouiar",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 189,
+										"Titre en breton": "Kloarek ar Glaouiar",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 190,
+										"Titre en breton": "Annaïg Lukaz",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 191,
+										"Titre en breton": "Annaïg Lukaz",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 192,
+										"Titre en breton": "Anna ar Gardien",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 193,
+										"Titre en breton": "Anna ar Gardien",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 194,
+										"Titre en breton": "Kloarek Laoudour",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 195,
+										"Titre en breton": "Kloarek Laoudour",
+										"Chanté par": "M. l'abbé Olivier",
+										"Origine interprète": "Plouguernevel",
+										"Lat": "48.239647",
+										"Lon": "-3.251956"
+									  },
+									  {
+										"N° MD": 196,
+										"Titre en breton": "Kloarek Laoudour",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 197,
+										"Titre en breton": "Kloarek Lambol",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 198,
+										"Titre en breton": "Kloarek Lambol",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 199,
+										"Titre en breton": "Kloarek Lambol",
+										"Chanté par": "Maryvonne Nicol",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 200,
+										"Titre en breton": "Kloarek Lambol",
+										"Chanté par": "M. Clec'h",
+										"Origine interprète": "Lanrodec",
+										"Lat": "48.516936",
+										"Lon": "-3.030807"
+									  },
+									  {
+										"N° MD": 201,
+										"Titre en breton": "Janed Derrien",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 202,
+										"Titre en breton": "Yannig ar Gall",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 203,
+										"Titre en breton": "An diou c'hoar",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 204,
+										"Titre en breton": "An diou c'hoar",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 205,
+										"Titre en breton": "Fiak Javre",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 206,
+										"Titre en breton": "Fiak Javre",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 207,
+										"Titre en breton": "Mari Tili",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 208,
+										"Titre en breton": "Mari Tili",
+										"Chanté par": "Yves Menguy et Guillaume Léon",
+										"Origine interprète": "Carhaix",
+										"Lat": "48.276156",
+										"Lon": "-3.575110"
+									  },
+									  {
+										"N° MD": 209,
+										"Titre en breton": "An Itron a Gergadio",
+										"Chanté par": "Marie-Louise Colas",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 210,
+										"Titre en breton": "Ar plac'hig a lorc'h",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 211,
+										"Titre en breton": "Ar vatez fall",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 212,
+										"Titre en breton": "Janedig Toulouz",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 213,
+										"Titre en breton": "Janedig Toulouz",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 214,
+										"Titre en breton": "Ar c'hont Gwilhou",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 215,
+										"Titre en breton": "Sonig Kawel",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 216,
+										"Titre en breton": "Sonig Kawel",
+										"Chanté par": "Mme Lajat",
+										"Origine interprète": "Skrignak",
+										"Lat": "48.432538",
+										"Lon": "-3.677803"
+									  },
+									  {
+										"N° MD": 217,
+										"Titre en breton": "Sonig Kawel",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 218,
+										"Titre en breton": "Ar Grampouezerez",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 219,
+										"Titre en breton": "Ar Grampouezerez",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 220,
+										"Titre en breton": "Ar Grampouezerez",
+										"Chanté par": "M. Loeiz Herrieu",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 221,
+										"Titre en breton": "Maro al laouenan",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 222,
+										"Titre en breton": "Maro al laouenan",
+										"Chanté par": "Françoise le Bon",
+										"Origine interprète": "Coadout",
+										"Lat": "48.518101",
+										"Lon": "-3.186307"
+									  },
+									  {
+										"N° MD": 223,
+										"Titre en breton": "Maro al laouenan",
+										"Chanté par": "M. l'abbé Perrot",
+										"Origine interprète": "Saint-Vougay",
+										"Lat": "48.593946",
+										"Lon": "-4.137983"
+									  },
+									  {
+										"N° MD": 224,
+										"Titre en breton": "Maro al laouenan",
+										"Chanté par": "Pleyber",
+										"Origine interprète": "Plounevez-du-Faou",
+										"Lat": "48.252496",
+										"Lon": "-3.825060"
+									  },
+									  {
+										"N° MD": 225,
+										"Titre en breton": "Sonig Kawel",
+										"Chanté par": "M. Yves Berthou",
+										"Origine interprète": "Pleubihan",
+										"Lat": "48.842012",
+										"Lon": "-3.138871"
+									  },
+									  {
+										"N° MD": 226,
+										"Titre en breton": "Sonig Kawel",
+										"Chanté par": "Mme Loeiza Herrieu",
+										"Origine interprète": "Languidic",
+										"Lat": "47.833642",
+										"Lon": "-3.158047"
+									  },
+									  {
+										"N° MD": 227,
+										"Titre en breton": "Ar Yarig",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 228,
+										"Titre en breton": "Ar Bichig",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 229,
+										"Titre en breton": "Son ar c'haz",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 230,
+										"Titre en breton": "Son ar c'haz",
+										"Chanté par": "M. Klaoda ar Prat",
+										"Origine interprète": "Landivisiau",
+										"Lat": "48.510276",
+										"Lon": "-4.072189"
+									  },
+									  {
+										"N° MD": 231,
+										"Titre en breton": "Ar logoden er bod",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 232,
+										"Titre en breton": "Ar logoden er bod",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 233,
+										"Titre en breton": "An Ter c'hadig",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 234,
+										"Titre en breton": "Me n'am eus nemet eur blank",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 235,
+										"Titre en breton": "Me n'am eus nemet eur blank",
+										"Chanté par": "",
+										"Origine interprète": "Trégunc",
+										"Lat": "47.855563",
+										"Lon": "-3.852796"
+									  },
+									  {
+										"N° MD": 236,
+										"Titre en breton": "Bal",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 237,
+										"Titre en breton": "Bal",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 238,
+										"Titre en breton": "Bal",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 239,
+										"Titre en breton": "Bal",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 240,
+										"Titre en breton": "Bal",
+										"Chanté par": "M. Loeiz Herrieu",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 241,
+										"Titre en breton": "Bal",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 242,
+										"Titre en breton": "Annaïg",
+										"Chanté par": "non cité",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 243,
+										"Titre en breton": "Son ar Yar",
+										"Chanté par": "idem",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 244,
+										"Titre en breton": "Son ar Yar",
+										"Chanté par": "M. l'abbé Guillou",
+										"Origine interprète": "Plourac'h",
+										"Lat": "48.416581",
+										"Lon": "-3.547600"
+									  },
+									  {
+										"N° MD": 245,
+										"Titre en breton": "Al louarn Galant",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 246,
+										"Titre en breton": "An danvad pen-gornik",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 247,
+										"Titre en breton": "Son ar C'havr",
+										"Chanté par": "P. Coat",
+										"Origine interprète": "Boharz",
+										"Lat": "48.429115",
+										"Lon": "-4.514483"
+									  },
+									  {
+										"N° MD": 248,
+										"Titre en breton": "Kaz Nicolaz",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 249,
+										"Titre en breton": "Ar Gewier",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 250,
+										"Titre en breton": "Ar Gewier",
+										"Chanté par": "Augustine Malo",
+										"Origine interprète": "Ploëzal",
+										"Lat": "48.715537",
+										"Lon": "-3.204180"
+									  },
+									  {
+										"N° MD": 251,
+										"Titre en breton": "Ar Gewier",
+										"Chanté par": "M. l'abbé Thoz",
+										"Origine interprète": "Lannion",
+										"Lat": "48.731996",
+										"Lon": "-3.458340"
+									  },
+									  {
+										"N° MD": 252,
+										"Titre en breton": "Tasel hag e Gog",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 253,
+										"Titre en breton": "Eured al laouenanig",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 254,
+										"Titre en breton": "Gouspero Kerne",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 255,
+										"Titre en breton": "Gouspero Kerne",
+										"Chanté par": "",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 256,
+										"Titre en breton": "Gouspero ar Raned",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 257,
+										"Titre en breton": "Gouspero ar Raned",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 258,
+										"Titre en breton": "Gouspero ar Raned",
+										"Chanté par": "M. l'abbé Guillou",
+										"Origine interprète": "Plourac'h",
+										"Lat": "48.416581",
+										"Lon": "-3.547600"
+									  },
+									  {
+										"N° MD": 259,
+										"Titre en breton": "Evel eur vagig war ar stang",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 260,
+										"Titre en breton": "Ar Feunteun a drue",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 261,
+										"Titre en breton": "Ar Feunteun a drue",
+										"Chanté par": "Augustine Kerleau",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 262,
+										"Titre en breton": "War ar stank",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 263,
+										"Titre en breton": "Sonig amourousted",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 264,
+										"Titre en breton": "Er Gerig wen, traon ar mene",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 265,
+										"Titre en breton": "Er Gerig wen, traon ar mene",
+										"Chanté par": "M. Lajat",
+										"Origine interprète": "Skrignak",
+										"Lat": "48.432538",
+										"Lon": "-3.677803"
+									  },
+									  {
+										"N° MD": 266,
+										"Titre en breton": "Er Gerig wen, traon ar mene",
+										"Chanté par": "M. Lajat",
+										"Origine interprète": "Skrignak",
+										"Lat": "48.432538",
+										"Lon": "-3.677803"
+									  },
+									  {
+										"N° MD": 267,
+										"Titre en breton": "Er Gerig wen, traon ar mene",
+										"Chanté par": "Mme Loeiza Herrieu",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 268,
+										"Titre en breton": "War oan war dosen Runtaou",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 269,
+										"Titre en breton": "Pa dremenan dor ho jardin",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 270,
+										"Titre en breton": "An Ale Rozmani",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 271,
+										"Titre en breton": "Me n'vin Belek, na Manac'h",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 272,
+										"Titre en breton": "Me n'vin Belek, na Manac'h",
+										"Chanté par": "Mme A. Lajat",
+										"Origine interprète": "Scrignac",
+										"Lat": "48.432538",
+										"Lon": "-3.677803"
+									  },
+									  {
+										"N° MD": 273,
+										"Titre en breton": "Me n'vin Belek, na Manac'h",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 274,
+										"Titre en breton": "Me n'vin Belek, na Manac'h",
+										"Chanté par": "M. Loeiz Herrieu",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 275,
+										"Titre en breton": "An Evnig Rouz",
+										"Chanté par": "Augustine Malo",
+										"Origine interprète": "Ploëzal",
+										"Lat": "48.715537",
+										"Lon": "-3.204180"
+									  },
+									  {
+										"N° MD": 276,
+										"Titre en breton": "Evnig Saint-Nokalez",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 277,
+										"Titre en breton": "Evnig Saint-Nokalez",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 278,
+										"Titre en breton": "Ar Verjeren hag Den-Jentil",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 279,
+										"Titre en breton": "Ar Verjeren hag Den-Jentil",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 280,
+										"Titre en breton": "Ar Verjeren hag Den-Jentil",
+										"Chanté par": "M. Loeiz Herrieu",
+										"Origine interprète": "Lann er-Stér",
+										"Lat": "47.763030",
+										"Lon": "-3.349160"
+									  },
+									  {
+										"N° MD": 281,
+										"Titre en breton": "Enezen Sant-Malo",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 282,
+										"Titre en breton": "Sekrejkou ar c'hloarek",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 283,
+										"Titre en breton": "Sekrejkou ar c'hloarek",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 284,
+										"Titre en breton": "Sekrejkou ar c'hloarek",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 285,
+										"Titre en breton": "Sekrejkou ar c'hloarek",
+										"Chanté par": "Augustine Malo",
+										"Origine interprète": "Ploëzal",
+										"Lat": "48.715537",
+										"Lon": "-3.204180"
+									  },
+									  {
+										"N° MD": 286,
+										"Titre en breton": "Kloarek Montroulez",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 287,
+										"Titre en breton": "Annaïg ar Fichant",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 288,
+										"Titre en breton": "Margodig",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 289,
+										"Titre en breton": "Ar Vestrez klanv",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 290,
+										"Titre en breton": "Son Kloarek Pempoul",
+										"Chanté par": "M. Yves Le Moal",
+										"Origine interprète": "Coadout",
+										"Lat": "48.518101",
+										"Lon": "-3.186307"
+									  },
+									  {
+										"N° MD": 291,
+										"Titre en breton": "Son Kloarek Pempoul",
+										"Chanté par": "Maryvonne Le Flem et Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 292,
+										"Titre en breton": "Perrina Koad",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 293,
+										"Titre en breton": "Plac'hig Lannuon",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 294,
+										"Titre en breton": "Plac'hig Lannuon",
+										"Chanté par": "Anna Blanchard",
+										"Origine interprète": "Plounevez-du-Faou",
+										"Lat": "48.252496",
+										"Lon": "-3.825060"
+									  },
+									  {
+										"N° MD": 295,
+										"Titre en breton": "Ar Basajerez, gwez kenta",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 296,
+										"Titre en breton": "Ar Basajerez, eilvet gwez ",
+										"Chanté par": "Augustine Kerleau",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 297,
+										"Titre en breton": "Ar Basajerez, eilvet gwez ",
+										"Chanté par": "Dagorn",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 298,
+										"Titre en breton": "An tri Marc'heger",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 299,
+										"Titre en breton": "An tri Marc'heger",
+										"Chanté par": "X.",
+										"Origine interprète": "Plouguernevel",
+										"Lat": "48.239647",
+										"Lon": "-3.251956"
+									  },
+									  {
+										"N° MD": 300,
+										"Titre en breton": "An tri Marc'heger",
+										"Chanté par": "X.",
+										"Origine interprète": "Plouguernevel",
+										"Lat": "48.239647",
+										"Lon": "-3.251956"
+									  },
+									  {
+										"N° MD": 301,
+										"Titre en breton": "An tri Marc'heger",
+										"Chanté par": "X.",
+										"Origine interprète": "Plouguernevel",
+										"Lat": "48.239647",
+										"Lon": "-3.251956"
+									  },
+									  {
+										"N° MD": 302,
+										"Titre en breton": "Ar c'hloarek fripon",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 303,
+										"Titre en breton": "Ar c'hloarek fripon",
+										"Chanté par": "M. François Jaffrennou",
+										"Origine interprète": "Carnoet",
+										"Lat": "48.367725",
+										"Lon": "-3.520042"
+									  },
+									  {
+										"N° MD": 304,
+										"Titre en breton": "Mari",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 305,
+										"Titre en breton": "M'am bije bet krayon...",
+										"Chanté par": "Maria Raoul",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 306,
+										"Titre en breton": "M'am bije bet krayon...",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 307,
+										"Titre en breton": "M'am bije bet krayon...",
+										"Chanté par": "Marie-Louise Colas",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 308,
+										"Titre en breton": "M'am bije bet krayon...",
+										"Chanté par": "M. François Jaffrennou",
+										"Origine interprète": "Carnoet",
+										"Lat": "48.367725",
+										"Lon": "-3.520042"
+									  },
+									  {
+										"N° MD": 309,
+										"Titre en breton": "Kloarek Kerdanguy",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 310,
+										"Titre en breton": "Kloarek Kerdanguy",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 311,
+										"Titre en breton": "Erwan Kamuz",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 312,
+										"Titre en breton": "Erwan Kamuz",
+										"Chanté par": "Marie-Louise Méhauté",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 313,
+										"Titre en breton": "Erwan Kamuz",
+										"Chanté par": "X.",
+										"Origine interprète": "Saint-Nicolas-du-Pelem",
+										"Lat": "48.314028",
+										"Lon": "-3.164601"
+									  },
+									  {
+										"N° MD": 314,
+										"Titre en breton": "Marc'harit Koant",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 315,
+										"Titre en breton": "Marc'harit Koant",
+										"Chanté par": "Paterne Kermabon",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 316,
+										"Titre en breton": "Marc'harit Koant",
+										"Chanté par": "",
+										"Origine interprète": "Trévèrec",
+										"Lat": "48.656056",
+										"Lon": "-3.058716"
+									  },
+									  {
+										"N° MD": 317,
+										"Titre en breton": "An hini varwas gant ar c'hoant dimi",
+										"Chanté par": "M. Lajat",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 318,
+										"Titre en breton": "An hini varwas gant ar c'hoant dimi",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 319,
+										"Titre en breton": "An hini varwas gant ar c'hoant dimi",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 320,
+										"Titre en breton": "An hini varwas gant ar c'hoant dimi",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 321,
+										"Titre en breton": "An hini varwas gant ar c'hoant dimi",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 322,
+										"Titre en breton": "Gwreg ar c'hivijer",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 323,
+										"Titre en breton": "Eur Zon Kloarek",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 324,
+										"Titre en breton": "Eur Zon Kloarek",
+										"Chanté par": "Augustine Malo",
+										"Origine interprète": "Ploëzal",
+										"Lat": "48.715537",
+										"Lon": "-3.204180"
+									  },
+									  {
+										"N° MD": 325,
+										"Titre en breton": "Eur Zon Kloarek",
+										"Chanté par": "Mme Croq",
+										"Origine interprète": "Douarnenez",
+										"Lat": "48.082744",
+										"Lon": "-4.325157"
+									  },
+									  {
+										"N° MD": 326,
+										"Titre en breton": "Ar Vestrez Glorus",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 327,
+										"Titre en breton": "Ar Vestrez Glorus",
+										"Chanté par": "Clec'h",
+										"Origine interprète": "Lanrodec",
+										"Lat": "48.516936",
+										"Lon": "-3.030807"
+									  },
+									  {
+										"N° MD": 328,
+										"Titre en breton": "Ar Vestrez Glorus",
+										"Chanté par": "M. P. Croq",
+										"Origine interprète": "Douarnenez",
+										"Lat": "48.082744",
+										"Lon": "-4.325157"
+									  },
+									  {
+										"N° MD": 329,
+										"Titre en breton": "Ar Vestrez Glorus",
+										"Chanté par": "M. P. Croq",
+										"Origine interprète": "Douarnenez",
+										"Lat": "48.082744",
+										"Lon": "-4.325157"
+									  },
+									  {
+										"N° MD": 330,
+										"Titre en breton": "Kloarek Kreac'h-Mikel",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 331,
+										"Titre en breton": "Kloarek Kreac'h-Mikel",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 332,
+										"Titre en breton": "War bont an Naoned",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 333,
+										"Titre en breton": "War bont an Naoned",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 334,
+										"Titre en breton": "War bont an Naoned",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 335,
+										"Titre en breton": "War bont an Naoned",
+										"Chanté par": "Mme Croq",
+										"Origine interprète": "Boharz",
+										"Lat": "48.429115",
+										"Lon": "-4.514483"
+									  },
+									  {
+										"N° MD": 336,
+										"Titre en breton": "War bont an Naoned",
+										"Chanté par": "",
+										"Origine interprète": "Goulien",
+										"Lat": "48.055925",
+										"Lon": "-4.593093"
+									  },
+									  {
+										"N° MD": 337,
+										"Titre en breton": "War bont an Naoned",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 338,
+										"Titre en breton": "Margodig ar C'helennek",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 339,
+										"Titre en breton": "Margodig ar C'helennek",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 340,
+										"Titre en breton": "Radig Saliou",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 341,
+										"Titre en breton": "Penherez Saliou",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 342,
+										"Titre en breton": "Reene Lambal",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 343,
+										"Titre en breton": "Evnig Krec'h Simon",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 344,
+										"Titre en breton": "Langidik",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 345,
+										"Titre en breton": "Mab ar bourew",
+										"Chanté par": "Augustine Kerleau",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 346,
+										"Titre en breton": "Kloaregig ar Stank",
+										"Chanté par": "Marie-Louise Colas",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 347,
+										"Titre en breton": "Kloaregig ar Stank",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 348,
+										"Titre en breton": "Fransoizing ha Pierig",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 349,
+										"Titre en breton": "Gouspero ar C'houiled",
+										"Chanté par": "Marie-Cinthe Toulouzan",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 350,
+										"Titre en breton": "Ar Verc'h hag ar Vamm",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 351,
+										"Titre en breton": "Sonig Kuzuilho da dimi",
+										"Chanté par": "",
+										"Origine interprète": "Kermaria-Sulard",
+										"Lat": "48.771324",
+										"Lon": "-3.370558"
+									  },
+									  {
+										"N° MD": 352,
+										"Titre en breton": "Ar Pried evel n'eus ket",
+										"Chanté par": "M. l'abbé Guillou",
+										"Origine interprète": "Plourac'h",
+										"Lat": "48.416581",
+										"Lon": "-3.547600"
+									  },
+									  {
+										"N° MD": 353,
+										"Titre en breton": "Ar Pried evel n'eus ket",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 354,
+										"Titre en breton": "Trubuilho an dud dimezet",
+										"Chanté par": "Mme le Borgne",
+										"Origine interprète": "Boharz",
+										"Lat": "48.429115",
+										"Lon": "-4.514483"
+									  },
+									  {
+										"N° MD": 355,
+										"Titre en breton": "Trubuilho an dud dimezet",
+										"Chanté par": "Mme le Borgne",
+										"Origine interprète": "Boharz",
+										"Lat": "48.429115",
+										"Lon": "-4.514483"
+									  },
+									  {
+										"N° MD": 356,
+										"Titre en breton": "Plac'hig Koad-Rouan",
+										"Chanté par": "",
+										"Origine interprète": "Pontrieux",
+										"Lat": "48.697215",
+										"Lon": "-3.161365"
+									  },
+									  {
+										"N° MD": 357,
+										"Titre en breton": "Plac'hig Koad-Rouan",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 358,
+										"Titre en breton": "Plac'hig Koad-Rouan",
+										"Chanté par": "Mme Vetel",
+										"Origine interprète": "Plounevez-du-Faou",
+										"Lat": "48.252496",
+										"Lon": "-3.825060"
+									  },
+									  {
+										"N° MD": 359,
+										"Titre en breton": "Gwreg an neer stoup",
+										"Chanté par": "Marie-Louise Colas",
+										"Origine interprète": "Trégonneau",
+										"Lat": "48.612100",
+										"Lon": "-3.165033"
+									  },
+									  {
+										"N° MD": 360,
+										"Titre en breton": "An dodaneg",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 361,
+										"Titre en breton": "An dodaneg",
+										"Chanté par": "X.",
+										"Origine interprète": "Skrignak",
+										"Lat": "48.432538",
+										"Lon": "-3.677803"
+									  },
+									  {
+										"N° MD": 362,
+										"Titre en breton": "Koviszion Janed",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 363,
+										"Titre en breton": "frasez Simon",
+										"Chanté par": "Mme Lajat",
+										"Origine interprète": "Scrignac",
+										"Lat": "48.432538",
+										"Lon": "-3.677803"
+									  },
+									  {
+										"N° MD": 364,
+										"Titre en breton": "Pelerin Santez Anna",
+										"Chanté par": "P. Coat",
+										"Origine interprète": "Boharz",
+										"Lat": "48.429115",
+										"Lon": "-4.514483"
+									  },
+									  {
+										"N° MD": 365,
+										"Titre en breton": "An intanv koz",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 366,
+										"Titre en breton": "soubenn ar yar",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 367,
+										"Titre en breton": "Kog Louiz Padel",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 368,
+										"Titre en breton": "Son Yannig Mic'hiek",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 369,
+										"Titre en breton": "Son joaus da dansal",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 370,
+										"Titre en breton": "Son ar boto lezr",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 371,
+										"Titre en breton": "Ar Jeldron bras",
+										"Chanté par": "",
+										"Origine interprète": "Trévèrec",
+										"Lat": "48.656056",
+										"Lon": "-3.058716"
+									  },
+									  {
+										"N° MD": 372,
+										"Titre en breton": "Ar vestrez gaouiad",
+										"Chanté par": "",
+										"Origine interprète": "Ploudaniel",
+										"Lat": "48.536396",
+										"Lon": "-4.311205"
+									  },
+									  {
+										"N° MD": 373,
+										"Titre en breton": "Portrer ma Mestrez",
+										"Chanté par": "P. Coat",
+										"Origine interprète": "Boharz",
+										"Lat": "48.429115",
+										"Lon": "-4.514483"
+									  },
+									  {
+										"N° MD": 374,
+										"Titre en breton": "Ar Gludik Koz",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 375,
+										"Titre en breton": "Eun tol vil",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 376,
+										"Titre en breton": "Ar c'hloarek dic'hizet",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 377,
+										"Titre en breton": "Ar c'hloarek dic'hizet",
+										"Chanté par": "",
+										"Origine interprète": "Trévèrec",
+										"Lat": "48.656056",
+										"Lon": "-3.058716"
+									  },
+									  {
+										"N° MD": 378,
+										"Titre en breton": "Kemenerez Lannuon",
+										"Chanté par": "",
+										"Origine interprète": "Trévèrec",
+										"Lat": "48.656056",
+										"Lon": "-3.058716"
+									  },
+									  {
+										"N° MD": 379,
+										"Titre en breton": "Kemenerez Lannuon",
+										"Chanté par": "Pleyber",
+										"Origine interprète": "Plounevez-du-Faou",
+										"Lat": "48.252496",
+										"Lon": "-3.825060"
+									  },
+									  {
+										"N° MD": 380,
+										"Titre en breton": "Kemenerez Lannuon",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 381,
+										"Titre en breton": "Kemenerez Lannuon",
+										"Chanté par": "X.",
+										"Origine interprète": "Boharz",
+										"Lat": "48.429115",
+										"Lon": "-4.514483"
+									  },
+									  {
+										"N° MD": 382,
+										"Titre en breton": "Abad Plou,evez",
+										"Chanté par": "",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 383,
+										"Titre en breton": "Roulomp hon Yaouankiz",
+										"Chanté par": "Yves Menguy",
+										"Origine interprète": "Pleven",
+										"Lat": "48.225853",
+										"Lon": "-3.507621"
+									  },
+									  {
+										"N° MD": 384,
+										"Titre en breton": "Roulomp hon Yaouankiz",
+										"Chanté par": "",
+										"Origine interprète": "Trégunc",
+										"Lat": "47.855563",
+										"Lon": "-3.852796"
+									  },
+									  {
+										"N° MD": 385,
+										"Titre en breton": "Roulomp hon Yaouankiz",
+										"Chanté par": "M. Louis Dujardin",
+										"Origine interprète": "Saint-Renan",
+										"Lat": "48.432764",
+										"Lon": "-4.622870"
+									  },
+									  {
+										"N° MD": 386,
+										"Titre en breton": "Mamm an avalo",
+										"Chanté par": "M. Yves Le Moal",
+										"Origine interprète": "Coadout",
+										"Lat": "48.518101",
+										"Lon": "-3.186307"
+									  },
+									  {
+										"N° MD": 387,
+										"Titre en breton": "Mamm an avalo",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 388,
+										"Titre en breton": "Ar Mezvier",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 389,
+										"Titre en breton": "Ar Mezvier",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 390,
+										"Titre en breton": "Son Souben al lez",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 391,
+										"Titre en breton": "Son Souben al lez",
+										"Chanté par": "Pleyber",
+										"Origine interprète": "Plounevez-du-Faou",
+										"Lat": "48.252496",
+										"Lon": "-3.825060"
+									  },
+									  {
+										"N° MD": 392,
+										"Titre en breton": "Son Souben al lez",
+										"Chanté par": "M. Lajat",
+										"Origine interprète": "Morlaix",
+										"Lat": "48.577047",
+										"Lon": "-3.828133"
+									  },
+									  {
+										"N° MD": 393,
+										"Titre en breton": "Kanomp an Nouel",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 394,
+										"Titre en breton": "Noz ar Gidonne",
+										"Chanté par": "Poazevara",
+										"Origine interprète": "Saint-Nicolas-du-Pelem",
+										"Lat": "48.314028",
+										"Lon": "-3.164601"
+									  },
+									  {
+										"N° MD": 395,
+										"Titre en breton": "Noz ar Gidonne",
+										"Chanté par": "P. L. Beaudoin",
+										"Origine interprète": "Plussulien",
+										"Lat": "48.282499",
+										"Lon": "-3.069969"
+									  },
+									  {
+										"N° MD": 396,
+										"Titre en breton": "Noz ar Gidonne",
+										"Chanté par": "M. Loeiz Herrieu",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 397,
+										"Titre en breton": "An Neerezed",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 398,
+										"Titre en breton": "An Neerezed",
+										"Chanté par": "X.",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 399,
+										"Titre en breton": "Mari Bek-Arôk",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 400,
+										"Titre en breton": "Ar c'hiz newe",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 401,
+										"Titre en breton": "Ar c'hiz newe",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 402,
+										"Titre en breton": "Ar c'hloarek had e vreur labourer",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 403,
+										"Titre en breton": "Ar Miliner",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 404,
+										"Titre en breton": "Ar Miliner",
+										"Chanté par": "M. l'abbé le Bayon",
+										"Origine interprète": "Vannes",
+										"Lat": "47.655826",
+										"Lon": "-2.757177"
+									  },
+									  {
+										"N° MD": 405,
+										"Titre en breton": "Ar Miliner",
+										"Chanté par": "J. ...",
+										"Origine interprète": "Saint-Aignan",
+										"Lat": "48.183331",
+										"Lon": "-3.01667 "
+									  },
+									  {
+										"N° MD": 406,
+										"Titre en breton": "Ar Miliner",
+										"Chanté par": "M. l'abbé Perrot",
+										"Origine interprète": "Saint-Vougay",
+										"Lat": "48.593946",
+										"Lon": "-4.137983"
+									  },
+									  {
+										"N° MD": 407,
+										"Titre en breton": "Ar Miliner laer",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 408,
+										"Titre en breton": "Ar Miliner laer",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 409,
+										"Titre en breton": "Ar Miliner dizoursi",
+										"Chanté par": "M. Croq",
+										"Origine interprète": "Douarnenez",
+										"Lat": "48.082744",
+										"Lon": "-4.325157"
+									  },
+									  {
+										"N° MD": 410,
+										"Titre en breton": "Son ar c'higer",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 411,
+										"Titre en breton": "Son ar c'higer",
+										"Chanté par": "X.",
+										"Origine interprète": "Ploëzal",
+										"Lat": "48.715537",
+										"Lon": "-3.204180"
+									  },
+									  {
+										"N° MD": 412,
+										"Titre en breton": "Son ar c'hemener",
+										"Chanté par": "X.",
+										"Origine interprète": "Ploëzal",
+										"Lat": "48.715537",
+										"Lon": "-3.204180"
+									  },
+									  {
+										"N° MD": 413,
+										"Titre en breton": "Son ar c'hemener",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 414,
+										"Titre en breton": "Kemenerien Langoat",
+										"Chanté par": "M. Le Du",
+										"Origine interprète": "Calahanel",
+										"Lat": "48.436432",
+										"Lon": "-3.480823"
+									  },
+									  {
+										"N° MD": 415,
+										"Titre en breton": "Son Soudard",
+										"Chanté par": "Louis Dévédec",
+										"Origine interprète": "Boharz",
+										"Lat": "48.429115",
+										"Lon": "-4.514483"
+									  },
+									  {
+										"N° MD": 416,
+										"Titre en breton": "Kimiad Soudard ar Republik",
+										"Chanté par": "la Veuve Salaun",
+										"Origine interprète": "Chateauneuf-du-Faou",
+										"Lat": "48.186723",
+										"Lon": "-3.814796"
+									  },
+									  {
+										"N° MD": 417,
+										"Titre en breton": "Kimiad Soudard ar Republik",
+										"Chanté par": "Anna Blanchard",
+										"Origine interprète": "Plounevez-du-Faou",
+										"Lat": "48.252496",
+										"Lon": "-3.825060"
+									  },
+									  {
+										"N° MD": 418,
+										"Titre en breton": "Kimiad Soudard ar Republik",
+										"Chanté par": "Marie-Anne Fichan",
+										"Origine interprète": "Saint-Jacques-Trémeven",
+										"Lat": "48.678153",
+										"Lon": "-3.040246"
+									  },
+									  {
+										"N° MD": 419,
+										"Titre en breton": "Distro eur Zoudard",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 420,
+										"Titre en breton": "Merc'hed Keriti",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  },
+									  {
+										"N° MD": 421,
+										"Titre en breton": "Martoloded an Oriant",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 422,
+										"Titre en breton": "Martoloded an Oriant",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 423,
+										"Titre en breton": "Martoloded an Oriant",
+										"Chanté par": "Mme Croq",
+										"Origine interprète": "Douarnenez",
+										"Lat": "48.082744",
+										"Lon": "-4.325157"
+									  },
+									  {
+										"N° MD": 424,
+										"Titre en breton": "Janed Helari",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 425,
+										"Titre en breton": "Janed Helari",
+										"Chanté par": "Augustine Kerleau",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 426,
+										"Titre en breton": "Ar Martolod yaouank",
+										"Chanté par": "Marie-Jeanne Le Bail",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 427,
+										"Titre en breton": "Na Gemeret ket Martoloded",
+										"Chanté par": "Maryvonne Le Flem",
+										"Origine interprète": "Port-Blanc",
+										"Lat": "48.835744",
+										"Lon": "-3.310296"
+									  },
+									  {
+										"N° MD": 428,
+										"Titre en breton": "Nouel Berta",
+										"Chanté par": "Maryvonne Nicole",
+										"Origine interprète": "Plouguiel",
+										"Lat": "48.797366",
+										"Lon": "-3.238885"
+									  },
+									  {
+										"N° MD": 429,
+										"Titre en breton": "Nouel Berta",
+										"Chanté par": "M. Yves Berthou",
+										"Origine interprète": "Pleubihan",
+										"Lat": "48.842012",
+										"Lon": "-3.138871"
+									  },
+									  {
+										"N° MD": 430,
+										"Titre en breton": "Nouel Berta",
+										"Chanté par": "",
+										"Origine interprète": "",
+										"Lat": "#N/A",
+										"Lon": "#N/A"
+									  },
+									  {
+										"N° MD": 431,
+										"Titre en breton": "An Ter Vari",
+										"Chanté par": "Marguerite Philippe",
+										"Origine interprète": "Pluzunet",
+										"Lat": "48.641096",
+										"Lon": "-3.372098"
+									  },
+									  {
+										"N° MD": 432,
+										"Titre en breton": "An Ter Vari",
+										"Chanté par": "Maryvonne Bouillonnec",
+										"Origine interprète": "Tréguier",
+										"Lat": "48.787298",
+										"Lon": "-3.231395"
+									  }
+									];
+
+						// Itération sur le tableau pour afficher les marqueurs
+						for (const element of datas) {
+
+							var lat = element['Lat'];
+							var lon = element['Lon'];
+
+							// Pour éliminer les localisations inconnues  (valeur #N/A)
+							if(!lat.includes("#") ) {
+
+								// Petit aléa pour ne pas entasser les points... notamment à Port-Blanc !!
+								lat = parseFloat(lat);
+								lon = parseFloat(lon);
+								lat += (Math.random()-0.5)*0.02;
+								lon += (Math.random()-0.5)*0.02;
+								
+								var interprete = "[inconnu]";
+								if( element['Chanté par'] != "") {
+									interprete = element['Chanté par'];
+								}
+								
+								var marker = L.marker([lat, lon])
+									.bindPopup("n°" + element['N° MD'] + " : " + element['Titre en breton'] + "<br>chanté par " + interprete + "<br>à " + element['Origine interprète'] )
+									.addTo(map);			
+							}
+						}
+						
+					</script>
+
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Eterna</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+		<p>Customized by <a href="about.html">Nicolas Tisserand</a></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

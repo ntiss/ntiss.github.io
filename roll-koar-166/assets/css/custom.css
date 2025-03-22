@@ -1,0 +1,217 @@
+
+/*--------------------------------------------------------------
+# Ajouts perso
+--------------------------------------------------------------*/
+
+	.navmenu .dropdown ul a.active {
+		color: var(--nav-hover-color);
+	}	
+
+	section, .section {
+		color: #444444;
+		background-color: #ffffff;
+		padding: 60px 0;
+		scroll-margin-top: 100px;
+		overflow: clip;
+	}
+
+	.hero-2 .welcome h2 {
+		margin: 0;
+		font-size: 48px;
+		font-weight: 700;
+	}
+
+	.hero-2:before, .cards:before {
+		content: "";
+		background: color-mix(in srgb, #ffffff, transparent 30%);
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+	}
+
+	.hero-2 img, .cards #card-bg {
+		position: absolute;
+		inset: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+  
+	.hero-2, .cards {
+		width: 100%;
+		min-height: 70vh;
+		padding: 10px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+	.hero-2 .container, .cards .container {
+		z-index: 3;
+	}
+	
+	.hero-2 .content .why-box {
+		color: #ffffff;
+		background: #e96b56;
+		padding: 30px;
+		border-radius: 10px;
+	}
+
+	.hero-2 .content .why-box .more-btn {
+		color: #ffffff;
+		background: color-mix(in srgb, #ffffff, transparent 80%);
+		display: inline-block;
+		padding: 6px 30px 8px 30px;
+		border-radius: 50px;
+		transition: all ease-in-out 0.4s;
+	}
+
+	.hero-2 .content .icon-box {
+		background: color-mix(in srgb, #ffffff, transparent 20%);
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+		padding: 40px 30px;
+		width: 100%;
+	}
+
+	.hero-2 .content .icon-box i {
+		font-size: 40px;
+		color: #e96b56;
+	}	
+
+	.hero-2 .featured-item:before {
+		content: "";
+		position: absolute;
+		inset: 100% 0 0 0;
+		transition: all 0.3s;
+		z-index: -1;
+		border-radius: 10px;
+	}	
+	
+	.hero-2 .featured-item:hover:before {
+		background: #e96b56;
+		inset: 0;
+	}
+	
+	.hero-2 .featured-item:hover h4 , .hero-2 .featured-item:hover i, .hero-2 .featured-item:hover p {
+		color: var(--contrast-color);
+	}
+
+	.hero-2 .featured-item-contrast:before {
+		content: "";
+		position: absolute;
+		inset: 100% 0 0 0;
+		transition: all 0.3s;
+		z-index: -1;
+		border-radius: 10px;
+	}	
+	
+	.hero-2 .featured-item-contrast:hover:before {
+		background: var(--contrast-color);
+		inset: 0;
+	}
+	
+	.hero-2 .featured-item-contrast:hover, .hero-2 .featured-item-contrast:hover b , .hero-2 .featured-item-contrast:hover i, .hero-2 .featured-item-contrast:hover p {
+		color: #e96b56;
+	}
+
+	.hero-2 .featured-item-contrast:hover .more-btn {
+		color: #e96b56;
+		background: color-mix(in srgb, #e96b56, transparent 80%);
+		transition: all ease-in-out 0.4s;
+	}
+
+	.cards .card-item {
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		background-color: #FFFCF4;
+		box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+		transition: all 0.3s ease-in-out;
+		height: 100%;
+	}
+	
+	.cards .card-item .card-number {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--accent-color);
+		margin-bottom: 1rem;
+	}
+
+	.cards .card-item h3 {
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	.cards .card-item p {
+		color: color-mix(in srgb, var(--default-color), transparent 25%);
+		font-size: 0.9rem;
+		line-height: 1.6;
+	}
+	
+	wave-audio-path-player::part(player) {
+	  background:#eeeeee;
+	  padding-top: 5px;
+	  padding-botton: 10px;
+	  border-radius: 30px;
+	  border:1px solid #dddddd;
+	}	
+
+	.profile-img {
+		border: 20px solid #e96b56;
+		padding: 0;
+	}
+	
+	.profile-img img {
+		margin-top: -60px;
+		margin-left: 40px;
+		margin-bottom: 40px;
+		position: relative;
+		z-index: 1;
+	}
+	
+	.leaflet-container {
+		height: 800px;
+		width: 1200px;
+		align:center;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
+	/*Legend specific*/
+	.legend {
+	  padding: 6px 8px;
+	  font: 14px Arial, Helvetica, sans-serif;
+	  background: white;
+	  background: rgba(255, 255, 255, 0.8);
+	  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+	  /*border-radius: 5px;*/
+	  line-height: 24px;
+	  color: #555;
+	}
+	.legend h4 {
+	  text-align: center;
+	  font-size: 16px;
+	  margin: 2px 12px 8px;
+	  color: #777;
+	}
+
+	.legend span {
+	  position: relative;
+	  bottom: 3px;
+	}
+
+	.legend i {
+	  width: 18px;
+	  height: 18px;
+	  float: left;
+	  margin: 0 8px 0 0;
+	  opacity: 0.7;
+	}
+
+	.legend i.icon {
+	  background-size: 18px;
+	  background-color: rgba(255, 255, 255, 1);
+	}	
